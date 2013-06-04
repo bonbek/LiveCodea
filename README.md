@@ -31,6 +31,7 @@ From Codea create a project named LiveCodea and copy Documents/LiveCodea/Main.lu
 - Run the project.
 
 From now you should be able to see and edit the reflected project files located in the Documents folder. A simple test is to open the Main.lua of the current running project, add some code in the draw function and save it. If Codea reflect the changes, you've got it!  
+Drop png or jpeg file to the Documents folder for sending it to Codea (be careful, your file will be deleted from this folder after sending)  
 The Sublime Text 2 package provide some shortcuts :  
 `alt+enter` evaluate current selection or current line (if no selection)  
 `alt+p` add a parameter (width the prompt for parameter type and arguments) for the selected var (word) or var under caret.
@@ -38,6 +39,7 @@ The Sublime Text 2 package provide some shortcuts :
 ## Know bugs, limitations and workarounds
 The request polling used is a battery drainer for the device.   
 Dependencies of the running project are not synchronized with the server.  
+Copying a png/jpeg file to the Documents folder will result to an incomplete upload to Codea. You must drop the file. 
 From Codea, when you close the viewer and return to the ide or project screen, http polling is alive. Mean that if you save a project file from the computer, Codea will continue to save the associated tab.  
 Fatal error can't be handled. You have to close the viewer and re-run the project.  
 The main setup function is evaluated once (like the normal Codea process). So, if you edit this function and save the file, Codea viewer won't eval the last modification until you re-run the project or explicitely fire an evaluation of the modified code.  
@@ -50,10 +52,14 @@ Instances are not retained on code evaluation.
 ## Want to Contribute ?
 Bring ideas, feedback, bug report, patches, package/plugins for your prefered text editor...
 
-## So, what next
+## Near, far and probable future
 - Grab current project name from plist rather than the Main tab
+- Handle file upload correctly
 - Extract changed parts in the main setup function for evaluation
 - Retain instances on code evaluation
 - Synchronize project dependencies
 - Find a way to handle fatal errors and restart properly
 - ...
+- Online server. Two folks working on the same project
+- ...
+- Code battle game
