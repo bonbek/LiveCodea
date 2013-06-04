@@ -1,4 +1,3 @@
-.gitignore
 .DS_Store
 .DS_Store?
 ._*
@@ -10,5 +9,7 @@ Thumbs.db
 *.todo
 *.pyc
 *.luac
+*.sublime-project
+*.sublime-workspace
 Documents/*
 !Documents/LiveCodea/
