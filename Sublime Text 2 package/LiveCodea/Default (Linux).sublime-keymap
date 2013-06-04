@@ -1,0 +1,5 @@
+[
+  { "keys": ["alt+enter"], "command": "live_codea_eval"},
+  { "keys": ["alt+w"], "command": "live_codea_watch"},
+  { "keys": ["alt+p"], "command": "live_codea_parameter"}
+]
